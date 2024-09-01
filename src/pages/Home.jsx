@@ -1,4 +1,10 @@
-import Header from "../components/Header";
+import ProductPath from "../components/ProductPath";
+import ProductContainer from "../components/ProductContainer";
 export default function Home() {
-  return <section></section>;
+  return (
+    <section className="p-2">
+      <ProductPath />
+      <ProductContainer />
+    </section>
+  );
 }

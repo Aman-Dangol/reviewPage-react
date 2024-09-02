@@ -12,7 +12,7 @@ export default function ProductReview() {
               <div className="mb-4 flex flex-row gap-2">
                 <User
                   color="white"
-                  className="border-2 bg-black rounded-full"
+                  className="border-2 mt-1 bg-black rounded-full"
                 />
                 <div>
                   <p>{review.name}</p>

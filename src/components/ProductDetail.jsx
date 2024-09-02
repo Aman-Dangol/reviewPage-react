@@ -12,7 +12,7 @@ export default function ProductDetail() {
     <section>
       <div className="flex justify-between p-2 ">
         <User color="white" className="bg-black rounded-full" />
-        <p className="text-slate-300">HR1235-800</p>
+        <p className="text-slate-100">HR1235-800</p>
       </div>
       <h3 className="font-bold ">Shoes Reebok Zig Kinetica 3</h3>
       <Stars number={avg} width="20" height="20" />
@@ -21,7 +21,7 @@ export default function ProductDetail() {
       <SizeSelector />
       <div className="flex justify-center  items-center gap-5 w-[60%]">
         <button className="flex-1 p-2 bg-black text-white rounded-md">
-          add to favourite
+          Add To Cart
         </button>
         <Heart />
       </div>

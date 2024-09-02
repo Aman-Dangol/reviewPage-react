@@ -29,4 +29,14 @@ export const REVIEWS = [
     stars: "3",
     comment: "this is okay for its price",
   },
+  {
+    name: "james",
+    stars: "1",
+    comment: "this not worth it",
+  },
+  {
+    name: "jojo",
+    stars: "3",
+    comment: "this is okay for its price",
+  },
 ];

@@ -1,21 +1,32 @@
 import { REVIEWS } from "../constants/Reviews";
 import Stars from "./Stars";
 import { User } from "lucide-react";
+import SummaryReview from "./SummaryReview";
 export default function ProductReview() {
   return (
-    <section>
-      {REVIEWS.map((review) => {
-        return (
-          <div className="mb-4">
-            <div className="flex">
-              <User width={20} />
-              <p>{review.name}</p>
+    <section className=" grid grid-cols-2">
+      <div>
+        {REVIEWS.map((review) => {
+          return (
+            <div>
+              <div className="mb-4 flex flex-row gap-2">
+                <User
+                  color="white"
+                  className="border-2 bg-black rounded-full"
+                />
+                <div>
+                  <p>{review.name}</p>
+                  <Stars number={review.stars} width={20} height={20} />
+                  <p>{review.comment}</p>
+                </div>
+              </div>
             </div>
-            <Stars number={review.stars} />
-            <p>{review.comment}</p>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+      <div>
+        <SummaryReview />
+      </div>
     </section>
   );
 }

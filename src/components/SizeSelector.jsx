@@ -8,11 +8,11 @@ export default function SizeSelector() {
     <>
       <div className="flex [&>*]:pr-2 mb-4  gap-2 flex-wrap">
         {sizes.map((size, index) => {
-          let border = "border-2   ";
+          let border = "";
 
           {
             if (choose == index) {
-              border = " border-2 bg-black text-white rounded-md";
+              border = "  bg-black text-white rounded-md";
             }
           }
           return (

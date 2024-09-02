@@ -19,7 +19,7 @@ export default function ColorSelector() {
           }
           return (
             <label htmlFor="color" key={index}>
-              <p className={`${textBold}`}>{color}</p>
+              <p className={`${textBold} capitalize`}>{color}</p>
               <input type="radio" name="color" id={index} hidden />
               <img
                 src={image}

@@ -6,7 +6,7 @@ import SearchBar from "./components/SearchBar";
 
 export default function App(params) {
   return (
-    <main className="bg-slate-200">
+    <main className="bg-[#e2e4e1]">
       <SearchBar></SearchBar>
       <Nav></Nav>
       <Outlet />

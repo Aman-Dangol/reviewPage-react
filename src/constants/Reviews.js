@@ -19,4 +19,14 @@ export const REVIEWS = [
     stars: "5",
     comment: "this is superb",
   },
+  {
+    name: "jacksom",
+    stars: "5",
+    comment: "this is comfortble",
+  },
+  {
+    name: "james",
+    stars: "3",
+    comment: "this is okay for its price",
+  },
 ];

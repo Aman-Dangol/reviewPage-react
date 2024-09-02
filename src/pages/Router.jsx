@@ -1,5 +1,5 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Home from "./home";
+import Home from "./Home";
 import App from "../App";
 
 export const router = createBrowserRouter([

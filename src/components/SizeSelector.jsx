@@ -6,7 +6,7 @@ export default function SizeSelector() {
   const [choose, setChoose] = useState(0);
   return (
     <>
-      <div className="flex [&>*]:pr-2 mb-10 gap-4 flex-wrap">
+      <div className="flex [&>*]:pr-2 mb-4  gap-2 flex-wrap">
         {sizes.map((size, index) => {
           let border = "border-2   ";
 
@@ -23,7 +23,7 @@ export default function SizeSelector() {
                   document.getElementById(index).checked = "true";
                   setChoose(index);
                 }}
-                className={`${border}  p-2 px-4 cursor-pointer`}
+                className={`${border}  p-2 px-4 cursor-pointer outline-none`}
               >
                 {size}
               </span>

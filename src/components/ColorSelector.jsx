@@ -7,19 +7,19 @@ export default function ColorSelector() {
 
   return (
     <>
-      <span>currenr color = {colors[choose]}</span>
-      <div className="flex w-40 [&>*]:pr-2 mb-12">
+      <div className="flex w-40 [&>*]:pr-2  mb-6">
         {colors.map((color, index) => {
           let border = "border-2   ";
-
+          let textBold = "font-normal";
           {
             if (choose == index) {
               border = " border-2 border-blue-500";
+              textBold = "font-bold";
             }
           }
           return (
             <label htmlFor="color" key={index}>
-              <p>{color}</p>
+              <p className={`${textBold}`}>{color}</p>
               <input type="radio" name="color" id={index} hidden />
               <img
                 src={image}
@@ -28,7 +28,7 @@ export default function ColorSelector() {
                   document.getElementById(index).checked = "true";
                   setChoose(index);
                 }}
-                className={`${border} rounded-md  `}
+                className={`${border} rounded-md   `}
               />
               {console.log(colors[choose])}
             </label>

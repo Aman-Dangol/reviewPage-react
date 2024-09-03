@@ -6,9 +6,9 @@ export default function ProductReview() {
   return (
     <section className=" grid grid-cols-2">
       <div>
-        {REVIEWS.map((review) => {
+        {REVIEWS.map((review, index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="mb-4 flex flex-row gap-2">
                 <User
                   color="white"

@@ -1,33 +1,35 @@
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-export default function ProductCritics() {
+export default function ProductCritics({ id }) {
   let location = useLocation();
-  console.log(location.pathname);
 
   return (
     <section className="grid grid-cols-3 w-[50%]">
-      <Link className={`focus:font-bold `} to="/">
+      <Link className={`focus:font-bold `} to={`/product/${id}`}>
         <h3
           className={`${
-            location.pathname == "/" ? "font-bold" : "font-normal"
+            location.pathname == `/product/${id}` ? "font-bold" : "font-normal"
           }`}
         >
           Details
         </h3>
       </Link>
-      <Link to="/reviews" className="focus:font-bold">
+      <Link to={`/product/${id}/reviews`} className="focus:font-bold">
         <h3
           className={`${
-            location.pathname == "/reviews" ? "font-bold" : "font-normal"
+            location.pathname == `/product/${id}/reviews`
+              ? "font-bold"
+              : "font-normal"
           }`}
         >
           Reviews
         </h3>
       </Link>
-      <Link to="/Discussion" className="focus:font-bold">
+      <Link to={`/product/${id}/Discussion`} className="focus:font-bold">
         <h3
           className={`${
-            location.pathname == "/Discussion" ? "font-bold" : "font-normal"
+            location.pathname == `/product/${id}/Discussion`
+              ? "font-bold"
+              : "font-normal"
           }`}
         >
           Discussion

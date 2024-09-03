@@ -2,7 +2,7 @@ import { useState } from "react";
 import image from "../assets/shoes.jpg";
 const colors = ["red", "white", "black"];
 
-export default function ColorSelector() {
+export default function ColorSelector({imageLink}) {
   const [choose, setChoose] = useState(0);
 
   return (
@@ -22,15 +22,14 @@ export default function ColorSelector() {
               <p className={`${textBold} capitalize`}>{color}</p>
               <input type="radio" name="color" id={index} hidden />
               <img
-                src={image}
+                src={imageLink}
                 alt=""
                 onClick={() => {
                   document.getElementById(index).checked = "true";
                   setChoose(index);
                 }}
-                className={`${border} rounded-md   `}
+                className={`${border} rounded-md cursor-pointer   `}
               />
-              {console.log(colors[choose])}
             </label>
           );
         })}

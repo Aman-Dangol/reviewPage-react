@@ -1,6 +1,5 @@
-import { Navigate } from "react-router-dom";
 import ProductReview from "../components/ProductReview";
-
+import ProductDescription from "../components/ProductDescription";
 export const ProductRouter = [
   {
     path: "/product/:id/reviews",
@@ -12,6 +11,6 @@ export const ProductRouter = [
   },
   {
     path: "/product/:id",
-    element: <h1>this is details</h1>,
+    element: <ProductDescription />,
   },
 ];

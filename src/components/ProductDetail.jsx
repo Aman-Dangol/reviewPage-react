@@ -23,7 +23,7 @@ export default function ProductDetail() {
       <h3 className="font-bold ">{product.name}</h3>
       <Stars number={avg} width="20" height="20" />
       <h1 className="font-bold py-3 mb-3 ">{product.price}</h1>
-      <ColorSelector imageLink={product.images[0]} />
+      <ColorSelector colors ={product.color} imageLink={product.images[0]} />
       <SizeSelector />
       <div className="flex justify-center  items-center gap-5 w-[60%]">
         <button className="flex-1 p-2 bg-black text-white rounded-md">

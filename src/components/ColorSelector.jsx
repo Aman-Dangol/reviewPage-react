@@ -1,8 +1,7 @@
 import { useState } from "react";
 import image from "../assets/shoes.jpg";
-const colors = ["red", "white", "black"];
 
-export default function ColorSelector({imageLink}) {
+export default function ColorSelector({ colors, imageLink }) {
   const [choose, setChoose] = useState(0);
 
   return (
@@ -28,7 +27,7 @@ export default function ColorSelector({imageLink}) {
                   document.getElementById(index).checked = "true";
                   setChoose(index);
                 }}
-                className={`${border} rounded-md cursor-pointer   `}
+                className={`${border} rounded-md h-[60%] cursor-pointer   `}
               />
             </label>
           );

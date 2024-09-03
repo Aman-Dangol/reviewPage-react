@@ -6,6 +6,7 @@ export default function SizeSelector() {
   const [choose, setChoose] = useState(0);
   return (
     <>
+      <p className="mb-[20px]">size: </p>
       <div className="flex [&>*]:pr-2 mb-4  gap-2 flex-wrap">
         {sizes.map((size, index) => {
           let border = "";

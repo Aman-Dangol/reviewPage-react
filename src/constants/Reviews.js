@@ -39,4 +39,14 @@ export const REVIEWS = [
     stars: "3",
     comment: "this is okay for its price",
   },
+  {
+    name: "jonathan",
+    stars: "5",
+    comment: "this is goood",
+  },
+  {
+    name: "jonas",
+    stars: "4",
+    comment: "meh",
+  },
 ];

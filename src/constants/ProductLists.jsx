@@ -94,4 +94,17 @@ export const PRODUCT_LIST = [
     color: ["blue", "white", "black", "green"],
     brand: "adidas",
   },
+  {
+    id: "huasd72321",
+    name: `Rib cotton sweater with embroidery`,
+    description:
+      "Creative Director Sabato De Sarno reinvents the essential men's wardrobe for the Fall Winter 2024 collection, with wearabilty and fit becoming key statements. Knitwear pieces are updated with modern silhouettes in luxurious fabrics. Here, a hand-embroidered crystal collar enriches this navy rib cotton sweater.",
+    price: "$8,300",
+    images: [
+      "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1715651179/794473_XKDZ6_4215_001_100_0000_Light-Rib-cotton-sweater-with-embroidery.jpg",
+    ],
+    type: "sweater",
+    color: ["blue", "white", "black", "green"],
+    brand: "gucci",
+  },
 ];

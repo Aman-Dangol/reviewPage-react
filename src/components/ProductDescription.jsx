@@ -3,7 +3,6 @@ import useData from "./useData";
 
 export default function ProductDescription() {
   let data = useData();
-  console.log(data);
 
   return (
     <section className=" w-[50%]">

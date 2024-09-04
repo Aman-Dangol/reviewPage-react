@@ -12,6 +12,7 @@ export const PRODUCT_LIST = [
     type: "shoes",
     price: "$150",
     brand: "nike",
+    for: "Men",
   },
   {
     id: "12H35",
@@ -26,6 +27,7 @@ export const PRODUCT_LIST = [
     type: "shoes",
     price: "$150",
     brand: "nike",
+    for: "Men",
   },
   {
     id: "13H45",
@@ -40,6 +42,7 @@ export const PRODUCT_LIST = [
     type: "shoes",
     price: "$150",
     brand: "nike",
+    for: "Men",
   },
   {
     id: "12H75",
@@ -54,6 +57,7 @@ export const PRODUCT_LIST = [
     type: "shoes",
     price: "$140",
     brand: "nike",
+    for: "Men",
   },
   {
     id: "12h6712",
@@ -67,6 +71,7 @@ export const PRODUCT_LIST = [
     type: "shoes",
     color: ["Red", "white", "black"],
     brand: "nike",
+    for: "Kids",
   },
   {
     id: "9012313hh",
@@ -80,6 +85,7 @@ export const PRODUCT_LIST = [
     type: "pants",
     color: ["pink", "white", "black"],
     brand: "adidas",
+    for: "Women",
   },
   {
     id: "1238hjad",
@@ -93,6 +99,7 @@ export const PRODUCT_LIST = [
     type: "pants",
     color: ["blue", "white", "black", "green"],
     brand: "adidas",
+    for: "Men",
   },
   {
     id: "huasd72321",
@@ -106,5 +113,6 @@ export const PRODUCT_LIST = [
     type: "sweater",
     color: ["blue", "white", "black", "green"],
     brand: "gucci",
+    for: "Men",
   },
 ];

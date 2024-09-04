@@ -8,11 +8,13 @@ export const SearchInput = createContext("");
 
 export default function App(params) {
   const [Search, setSearch] = useState("");
+  const [listBg, setListBg] = useState("");
+
   return (
-    <main className="bg-[#e2e4e1]">
-      <SearchInput.Provider value={[Search, setSearch]}>
+    <main className="bg-[#e2e4e1] min-h-screen">
+      <SearchInput.Provider value={[Search, setSearch, listBg, setListBg]}>
         <SearchBar></SearchBar>
-        <Nav></Nav>
+        <Nav setListBg={setListBg} listBg={listBg}></Nav>
         <Outlet />
       </SearchInput.Provider>
     </main>

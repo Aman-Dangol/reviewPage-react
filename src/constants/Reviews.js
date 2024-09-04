@@ -49,4 +49,9 @@ export const REVIEWS = [
     stars: "4",
     comment: "meh",
   },
+  {
+    name: "jonas",
+    stars: "5",
+    comment: "meh",
+  },
 ];

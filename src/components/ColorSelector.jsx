@@ -1,5 +1,4 @@
 import { useState } from "react";
-import image from "../assets/shoes.jpg";
 
 export default function ColorSelector({ colors, imageLink }) {
   const [choose, setChoose] = useState(0);

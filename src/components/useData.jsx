@@ -7,4 +7,3 @@ export default function useData() {
   const [data1] = data;
   return data1;
 }
-``

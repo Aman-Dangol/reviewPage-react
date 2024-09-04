@@ -4,10 +4,11 @@ import ProductCritics from "../components/ProductCritics";
 import { PRODUCT_LIST } from "../constants/ProductLists";
 import { Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { SearchInput } from "../App";
 export default function Home() {
   const { id } = useParams();
-  console.log(id);
   const product = PRODUCT_LIST.filter((product) => product.id == id);
 
   return (

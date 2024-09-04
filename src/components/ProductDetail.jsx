@@ -9,7 +9,6 @@ import { useContext } from "react";
 import { productID } from "./ProductContainer";
 export default function ProductDetail() {
   let [product] = useContext(productID);
-  console.log("product ko id", product);
 
   const avg = (
     REVIEWS.reduce((acc, sum) => acc + parseInt(sum.stars), 0) / REVIEWS.length

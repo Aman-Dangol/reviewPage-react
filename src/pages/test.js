@@ -1,7 +1,3 @@
-let obj = {
-  first: "john",
-  last: "doe",
-};
+let obj = [1, 2, 4];
 
-obj = { ...obj, first: "joe" };
-console.log(obj);
+console.log([...obj]);

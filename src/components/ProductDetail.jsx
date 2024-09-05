@@ -5,11 +5,11 @@ import SizeSelector from "./SizeSelector";
 import { Heart } from "lucide-react";
 import { REVIEWS } from "../constants/Reviews";
 import { useContext } from "react";
-
+import useaddToCart from "../utilities/useAddToCart";
 import { productID } from "./ProductContainer";
 export default function ProductDetail() {
   let [product] = useContext(productID);
-
+  let cartFunction = useaddToCart();
   const avg = (
     REVIEWS.reduce((acc, sum) => acc + parseInt(sum.stars), 0) / REVIEWS.length
   ).toFixed(1);
@@ -25,7 +25,10 @@ export default function ProductDetail() {
       <ColorSelector colors={product.color} imageLink={product.images[0]} />
       <SizeSelector />
       <div className="flex justify-center  items-center gap-5 w-[60%]">
-        <button className="flex-1 p-2 bg-black text-white rounded-md">
+        <button
+          className="flex-1 p-2 bg-black text-white rounded-md"
+          onClick={() => cartFunction.addToCart(product.name, "1")}
+        >
           Add To Cart
         </button>
         <Heart />

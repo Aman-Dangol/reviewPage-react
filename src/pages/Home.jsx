@@ -4,6 +4,8 @@ import ProductCritics from "../components/ProductCritics";
 import { PRODUCT_LIST } from "../constants/ProductLists";
 import { Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { Suspense } from "react";
+
 export default function Home() {
   const { id } = useParams();
 
@@ -14,7 +16,9 @@ export default function Home() {
       <ProductPath />
       <ProductContainer product={product} />
       <ProductCritics id={id} />
-      <Outlet />
+      <Suspense fallback={<h1>Home test loading</h1>}>
+        <Outlet />
+      </Suspense>
     </section>
   );
 }

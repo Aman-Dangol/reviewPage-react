@@ -2,6 +2,7 @@ import { REVIEWS } from "../constants/Reviews";
 import Stars from "./Stars";
 import { User } from "lucide-react";
 import SummaryReview from "./SummaryReview";
+
 export default function ProductReview() {
   return (
     <section className=" grid grid-cols-2">

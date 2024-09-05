@@ -1,34 +1,18 @@
-import ProductReview from "../components/ProductReview";
-import ProductDescription from "../components/ProductDescription";
-import { lazy, Suspense } from "react";
-import HomePage from "./HomePage";
+import { lazy } from "react";
+
+const LazyReview = lazy(() => import("../components/ProductReview"));
+const LazyDesc = lazy(() => import("../components/ProductDescription"));
 export const ProductRouter = [
   {
     path: "/product/:id/reviews",
-    lazy: () => {
-      return {
-        element: (
-          <Suspense fallback={console.log("loading")}>
-            <ProductReview />
-          </Suspense>
-        ),
-      };
-    },
+    element: <LazyReview />,
   },
   {
     path: "/product/:id/discussion",
-    lazy: () => {
-      return {
-        element: (
-          <Suspense fallback={console.log("loading discussion")}>
-            <h1>this is Discussion</h1>
-          </Suspense>
-        ),
-      };
-    },
+    element: <h1>hello</h1>,
   },
   {
     path: "/product/:id",
-    element: <ProductDescription />,
+    element: <LazyDesc />,
   },
 ];

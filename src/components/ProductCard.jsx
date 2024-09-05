@@ -1,10 +1,7 @@
+import { Link } from "react-router-dom";
 export default function ProductCard({ product }) {
   return (
-    <a
-      // state={Listbg}
-      href={`/product/${product.id}`}
-      className=" p-4 flex flex-col"
-    >
+    <Link to={`/product/${product.id}`} className=" p-4 flex flex-col">
       <img
         src={product.images[0]}
         alt=""
@@ -12,6 +9,6 @@ export default function ProductCard({ product }) {
       />
       <span className="font-semiboldnpm">{product.name}</span>
       <span>{product.price}</span>
-    </a>
+    </Link>
   );
 }

@@ -1,9 +1,12 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Home from "./Home";
 import App from "../App";
-import HomePage from "./HomePage";
+import HomePage from "../pages/HomePage";
 import { ProductRouter } from "./ProductRouter";
 import { PRODUCT_LIST } from "../constants/ProductLists";
+import Mycart from "./Mycart";
+import { lazy } from "react";
+
+const LazyHome = lazy(() => import("../pages/Home"));
 
 export const router = createBrowserRouter([
   {
@@ -20,12 +23,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "/product/:id",
-        element: <Home />,
-        children: [...ProductRouter],
+        element: <LazyHome />,
+        children: ProductRouter,
       },
       {
         path: "/MyCart",
-        element: <h1>this is your cart section</h1>,
+        element: <Mycart />,
       },
     ],
   },

@@ -4,7 +4,7 @@ import { productID } from "./ProductContainer";
 export default function ImageContainer() {
   const [product] = useContext(productID);
   return (
-    <div className="pr-10">
+    <div className="pr-10 row-span-2 ">
       <img
         src={product.images[0]}
         className="rounded-xl w-full  h-[20rem] lg:h-[25rem] bg-[#e2e4e1]  object-contain mb-1 "

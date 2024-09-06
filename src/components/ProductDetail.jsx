@@ -18,7 +18,9 @@ export default function ProductDetail() {
   return (
     <section>
       <div
-        className={`absolute bottom-10 p-4   bg-blue-500 ${popUp || "hidden"}`}
+        className={`absolute bottom-10 p-4 uppercase font-bold rounded-lg  bg-slate-300 ${
+          popUp || "hidden"
+        } `}
       >
         {popUp}
       </div>
@@ -46,8 +48,8 @@ export default function ProductDetail() {
             setPopUp("item added");
             setTimeout(() => {
               setPopUp("");
-            }, 1000);
-            return cartFunction.addToCart(product.name, quantity);
+            }, 1000);            
+            return cartFunction.addToCart(product.name, quantity,product.price);
           }}
         >
           Add To Cart

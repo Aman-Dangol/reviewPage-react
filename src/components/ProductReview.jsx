@@ -5,7 +5,7 @@ import SummaryReview from "./SummaryReview";
 
 export default function ProductReview() {
   return (
-    <section className=" grid grid-cols-2">
+    <section className=" flex flex-col-reverse  md:grid-cols-2 md:grid">
       <div>
         {REVIEWS.map((review, index) => {
           return (

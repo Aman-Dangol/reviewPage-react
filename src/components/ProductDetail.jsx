@@ -31,7 +31,7 @@ export default function ProductDetail() {
       </div>
       <h3 className="font-bold ">{product.name}</h3>
       <Stars number={avg} width="20" height="20" />
-      <h1 className="font-bold py-3 mb-3 ">{product.price}</h1>
+      <h1 className="font-bold py-3 mb-3 ">${product.price}</h1>
       <ColorSelector colors={product.color} imageLink={product.images[0]} />
       <SizeSelector />
       <div className="flex justify-center  items-center gap-5 w-[60%]">
@@ -48,8 +48,13 @@ export default function ProductDetail() {
             setPopUp("item added");
             setTimeout(() => {
               setPopUp("");
-            }, 1000);            
-            return cartFunction.addToCart(product.name, quantity,product.price);
+            }, 1000);
+            return cartFunction.addToCart(
+              product.id,
+              product.name,
+              quantity,
+              product.price
+            );
           }}
         >
           Add To Cart

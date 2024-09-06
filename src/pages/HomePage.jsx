@@ -9,7 +9,7 @@ export default function HomePage() {
   const regex = new RegExp(search, "gi");
 
   return (
-    <section className="grid grid-cols-2 sm:grid-cols-4">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
       {ProductList?.filter((p) => {
         if (listBg) {
           console.log(listBg);

@@ -3,7 +3,7 @@ export default function ProductCritics({ id }) {
   let location = useLocation();
 
   return (
-    <section className="grid grid-cols-3  w-[100%] border-b-[1px] border-black ">
+    <section className="grid grid-cols-3  text-center  w-[100%] border-b-[1px] border-black ">
       <Link className={`focus:font-bold `} to={`/product/${id}`}>
         <h3
           className={`${

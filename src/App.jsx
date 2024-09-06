@@ -7,6 +7,7 @@ import SearchBar from "./components/SearchBar";
 export const SearchInput = createContext("");
 
 export default function App(params) {
+  console.clear();
   const [Search, setSearch] = useState("");
   const [listBg, setListBg] = useState("");
   const cartItems = useRef([]);

@@ -11,7 +11,7 @@ export default function ProductDetail() {
   const [popUp, setPopUp] = useState("");
   const [quantity, setQuantity] = useState("1");
   let [product] = useContext(productID);
-  let cartFunction = useaddToCart();
+  let { addToCart } = useaddToCart();
   const avg = (
     REVIEWS.reduce((acc, sum) => acc + parseInt(sum.stars), 0) / REVIEWS.length
   ).toFixed(1);
@@ -49,12 +49,7 @@ export default function ProductDetail() {
             setTimeout(() => {
               setPopUp("");
             }, 1000);
-            return cartFunction.addToCart(
-              product.id,
-              product.name,
-              quantity,
-              product.price
-            );
+            return addToCart(product.id, product.name, quantity, product.price);
           }}
         >
           Add To Cart

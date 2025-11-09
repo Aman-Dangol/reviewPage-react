@@ -6,16 +6,18 @@ const useaddToCart = create((set) => ({
     set((state) => {
       let NewItems = state.items;
 
-      NewItems.set(item, {  
+      NewItems.set(item, {
         id: id,
         quantity: (NewItems.get(item)?.quantity || 0) + parseInt(quantity),
         price:
           parseInt(quantity) * parseInt(price) +
           (NewItems.get(item)?.price || 0),
       });
+      console.log(NewItems.entries());
 
       return NewItems;
     }),
+  // filteredData: items.fil,
 }));
 
 export default useaddToCart;

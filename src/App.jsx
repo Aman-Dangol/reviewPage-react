@@ -9,7 +9,7 @@ export const SearchInput = createContext("");
 export default function App(params) {
   console.clear();
   const [Search, setSearch] = useState("");
-  const [listBg, setListBg] = useState("");
+  const [listBg, setListBg] = useState("All");
   const cartItems = useRef([]);
   return (
     <main className="bg-[#e2e4e1] min-h-screen">

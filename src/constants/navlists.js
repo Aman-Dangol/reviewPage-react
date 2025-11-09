@@ -1,1 +1,1 @@
-export const LISTS = ["Women", "Men", "Kids", "Sports", "Brands"];
+export const LISTS = ["All", "Women", "Men", "Kids", "Sports", "Brands"];

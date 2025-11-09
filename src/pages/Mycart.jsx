@@ -2,7 +2,7 @@ import useaddToCart from "../utilities/useAddToCart";
 import { Link } from "react-router-dom";
 export default function Mycart() {
   let { items } = useaddToCart();
-  let element = <h1>No items found</h1>;
+  let element = <h1>No items found </h1>;
 
   items.size != 0
     ? (element = (

@@ -1,9 +1,6 @@
 import { LISTS } from "../constants/navlists";
 
-import { useLocation } from "react-router-dom";
 export default function Nav({ listBg, setListBg }) {
-  let { state } = useLocation();
-
   return (
     <nav className="flex list-none [&>*]:p-2 border-b-[1px] border-slate-900">
       {LISTS.map((list, index) => (
